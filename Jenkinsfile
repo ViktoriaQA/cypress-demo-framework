@@ -50,8 +50,8 @@ pipeline {
         
         stage('Testing') {
             steps {
-                bash "npm i"
-                bash "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                bat "npm i"
+                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
         
